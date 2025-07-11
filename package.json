@@ -1,0 +1,24 @@
+{
+  "name": "easymail-js",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "description": "TypeScript & JavaScript library to send transactional emails easily from Node.js using SMTP.",
+  "author": "Pelayo Felgueroso Galguera",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

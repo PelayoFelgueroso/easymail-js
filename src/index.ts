@@ -1,10 +1,10 @@
-export interface EasyMailJSOptions {
+export interface UpsendJSOptions {
   templateId: string;
   to: string;
   variables?: Record<string, any>;
 }
 
-export class EasyMailJS {
+export class UpsendJS {
   private apiKey: string;
   private secretKey: string;
   private baseURL: string;
@@ -12,14 +12,14 @@ export class EasyMailJS {
   constructor(
     apiKey: string,
     secretKey: string,
-    baseURL = "https://easymailjs.com/api"
+    baseURL = "https://upsend.dev/api"
   ) {
     this.apiKey = apiKey;
     this.secretKey = secretKey;
     this.baseURL = baseURL;
   }
 
-  async send(options: EasyMailJSOptions) {
+  async send(options: UpsendJSOptions) {
     const res = await fetch(`${this.baseURL}/email/send`, {
       method: "POST",
       headers: {

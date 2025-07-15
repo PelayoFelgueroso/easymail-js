@@ -1,12 +1,12 @@
-export interface EasyMailJSOptions {
+export interface UpsendJSOptions {
     templateId: string;
     to: string;
     variables?: Record<string, any>;
 }
-export declare class EasyMailJS {
+export declare class UpsendJS {
     private apiKey;
     private secretKey;
-    private baseURL;
+    private readonly baseURL;
     constructor(apiKey: string, secretKey: string, baseURL?: string);
-    send(options: EasyMailJSOptions): Promise<any>;
+    send(options: UpsendJSOptions): Promise<any>;
 }

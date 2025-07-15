@@ -7,7 +7,7 @@ export interface UpsendJSOptions {
 export class UpsendJS {
   private apiKey: string;
   private secretKey: string;
-  private baseURL: string;
+  private readonly baseURL: string;
 
   constructor(
     apiKey: string,

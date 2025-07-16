@@ -12,7 +12,7 @@ export class UpsendJS {
   constructor(
     apiKey: string,
     secretKey: string,
-    baseURL = "https://wwww.upsend.dev/api"
+    baseURL = "https://www.upsend.dev/api"
   ) {
     this.apiKey = apiKey;
     this.secretKey = secretKey;

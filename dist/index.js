@@ -1,5 +1,5 @@
 export class UpsendJS {
-    constructor(apiKey, secretKey, baseURL = "https://upsend.dev/api") {
+    constructor(apiKey, secretKey, baseURL = "https://wwww.upsend.dev/api") {
         this.apiKey = apiKey;
         this.secretKey = secretKey;
         this.baseURL = baseURL;
